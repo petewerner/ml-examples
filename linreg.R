@@ -1,4 +1,4 @@
-
+# Copyright (c) Peter Werner 2012
 data <- read.csv('ex2data1.txt', header=FALSE)
 names(data) <- c("X1", "X2", "Y")
  

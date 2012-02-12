@@ -1,3 +1,5 @@
+# Copyright (c) Peter Werner 2012
+
 library(e1071)
 
 data <- read.csv('ex2data1.txt', header=FALSE)

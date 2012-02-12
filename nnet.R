@@ -1,3 +1,5 @@
+# Copyright (c) Peter Werner 2012
+
 library(nnet)
 data <- read.csv('ex2data1.txt', header=FALSE)
 names(data) <- c("X1", "X2", "Y")
@@ -19,4 +21,4 @@ x0 <- data[data$Y == 0, c(1,2)]
 x1 <- data[data$Y == 1, c(1,2)]
 symbols(x0, circles=rep(0.5, nrow(x0)), inches=FALSE, bg="yellow")
 symbols(x1, squares=rep(1, nrow(x1)), inches=FALSE, add=TRUE, bg="red")
-contour(x1vals, x2vals, zz, add=T)
+contour(x1vals, x2vals, zz, add=T, levels=c(0.5))
